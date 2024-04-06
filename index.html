@@ -4,108 +4,188 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+        <!-- --------- UNICONS ---------- -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+            <!-- Favicon -->
+    <link rel="icon" href="favicon.ico">
+            <!-- Google font -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu" rel="stylesheet">
+
+                <!-- CSS stylesheet -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="avataaars.png">
-    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Merriweather+Sans&family=Montserrat&family=Sacramento&display=swap" rel="stylesheet">
+
+    <!-- JS -->
+    <script src="script.js" charset="utf-8" defer></script>
+
+    <!-- Font awesome -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+        <!-- Bootstrap script -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="div1">
-        <div class="intro">
-            <img class="intro2" src="coder.png" alt="developer"></img>
-            <h1 class="intro1">Hi there! <span class="wave" role="img" aria-labelledby="wave">👋🏻</span></h1>
-            <h1>I'm <b>Feben Alebachew</b></h1>
-            <h3 class="intro3"><b>Software Engineering Student</b></h3>
-        </div>
-        <div class="about">
-            <div class="av">
-                <h2 class="me">A little about <b>ME</b></h2>
-                <I>Hello there <b>Feben</b> here. Born and raised in <b>Adama, Ethiopia</b>. I'm a software engineering 3rd year student at Adama Science and Technology University. I started programming in early 2021, when I joined at ASTU. I first started with <b>Python</b> then worked on web development for a while. And my favorite coding language has been <b>C++</b> and I'm conversant with <b>Java</b>, <b>Python</b> and, <b>Javascript</b>.</p>
-                <br>
-                <p>Apart from coding, what do I enjoy?</p>
-                <ul>
-                    <li>Art and Poetry</li>
-                    <li>Traveling</li>
-                    <li>Swimming</li>
+    <section class="coloured" id="title">
+        <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <a class="navbar-brand" href="">Feben A.</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#home">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse nav-menu" id="home">
+                <ul class="navbar-nav lists ml-auto">
+                    <li class="nav-item"><a class="nav-link active-link" aria-current="page">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#AboutMe">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Project</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#inTouch">Contact</a></li>
                 </ul>
-                <a href="https://github.com/Eshtaol22/Portfolio/blob/main/Feben%20Alebachew%20(1).pdf" download><input class="btn3" type="button" value="Download Resume"></a>
             </div>
-            <img class="av2" src="avataaars.png" alt="mine avatar"></img>
-        </div>
-        <div class="skills">
-            <h2 class="sets">Professional <b>Skillset</b></h2>
-            <div class="logo">
-                <div>
-                    <img class="part1" src="python_logo.png" alt="python logo"></img>
+        </nav>
+        <div class="row feature justify-content-center pt-5 w-100">
+            <div class="col-lg-6 box1">
+                <h2 class="featured-text-card">Hi there!<span class="wave" role="img" aria-labelledby="wave">👋🏻</span></h2>
+                <div class="featured-name">
+                    <h1>I'm <span class="typedText"></span></h1>
                 </div>
-                <div>
-                    <img class="part1" src="C++_logo.png" alt="C++ logo"></img>
-                </div>
-                <div>
-                    <img class="part1" src="java_logo.png" alt="Java logo"></img>
-                </div>
-                <div>
-                    <img class="part1" src="html_logo.png" alt="HTML logo"></img>
-                </div>
-                <div>
-                    <img class="part2" src="css_logo.png" alt="CSS logo"></img>
-                </div>
-                <div>
-                    <img class="part2" src="javascript_logo.png" alt="Javascript logo"></img>
-                </div>
+                <p class="featured-text">Experienced Full Stack Developer proficient in both frontend and backend technologies, adept
+                    at creating comprehensive solutions for diverse projects.</p>
+                <button type="button" class="btn btn-dark btn-lg featured-btn download-button"><i class="social icon fas fa-regular fa-download"></i> Download CV</button>
+                <button type="button" class="btn btn-outline-light btn-lg featured-btn download-button"><i class="social icon fas fa-regular fa-comments"></i> Contact</button>
             </div>
-        </div>
-        <div class="works">
-            <h2>My Recent <b>Works</b></h2>
-            <h3>Here are a few projects I've worked on recently</h3>
-            <div class="card_list">
-                <div class="lists">
-                    <img class="card1" src="export.jpg" alt="Feben Ethiopian Coffee website"></img>
-                    <h3><b>Landing page</b></h3>
-                    <p>It showcases their values, highlights their commitment to quality and sustainability, and invites visitors to discover the unique flavors of Ethiopian coffee. The site provides information about the company and offers a way to get in touch. Overall, it beautifully presents Feben Ethiopian Coffee as a passionate ambassador of Ethiopian coffee heritage.</p>
-                    <a class="footer-link" href="https://github.com/Eshtaol22/OIBSIP/tree/main/Task%201"><input class="btn2" type="button" value="GitHub"></a>
-                </div>
-                <div class="lists">
-                    <img class="card2" src="converter.jpg" alt="Temperature converter "></img>
-                    <h3><b>Temperature Converter</b></h3>
-                    <p>It allows users to convert temperatures between Celsius, Kelvin, and Fahrenheit. Users can input a temperature value, select the units they want to convert from and to, and then click the "Convert" button to get the converted result. The website also provides a "Reset" button to clear the input fields. Overall, it provides a simple and convenient tool for temperature conversions.</p>
-                    <a class="footer-link" href="https://github.com/Eshtaol22/OIBSIP/tree/main/Task%203"><input class="btn2" type="button" value="GitHub"></a>
-                </div>
+            <div class="col-lg-5 col-md-4 col-sm-12 col-12 text-center">
+                <img class="title-image shadow d-md-none d-lg-block" src="myPic1.png" alt="my pic"><img>
+                <img class="md-title-image shadow d-none d-md-block d-lg-none" src="myPic1.png" alt="my pic"><img>
+            </div>
+            <div class="icons container-fluid">
+                <div class="cont-icon"><a href="mailto:feben.alebe@gmail.com"><i class="social-icon fas fa-envelope"></i></a></div>
+                <div class="cont-icon"><a href="https:/t.me/Eshtaol22"><i class="social-icon fab fa-brands fa-telegram"></i></a></div>
+                <div class="cont-icon"><a href="http://github.com/Eshtaol22"><i class="social-icon fab fa-github"></i></a></div>
+                <div class="cont-icon"><a href="http://www.linkedin.com/in/feben-alebe"><i class="social-icon fab fa-brands fa-linkedin"></i></a></div>
+                <div class="cont-icon"><a href="https://x.com/feben_alebe?s=09"><i class="social-icon fab fa-twitter"></i></a></div>
+                <div class="cont-icon"><a href="https://instagram.com/feben_alebe?igshid=NzZlODBkYWE4Ng=="><i class="social-icon fab fa-instagram"></i></a></div>
             </div>
         </div>
-        <div class="connect">
-            <h2>Contact me</h2>
-            <div class="comment">
-                <p>Just say <b>Hello</b></p>
-                <form action="mailto=feben.alebe@gmail.com" method="post" enctype="text/plain">
-                    <input class="accept" type="text" name="" value="" placeholder="Your name"><br>
-                    <input class="accept" type="email" name="" value="" placeholder="Your email address"><br>
-                    <textarea class="accept" name="name" rows="10" cols="50" placeholder="Your message"></textarea>
-                    <input class="btn3" type="button" value="Send">
+    </div>
+    </section>
+    <section class="white-section partition" id="AboutMe">
+        <h2 class="section-heading">About Me</h1>
+        <div class="row skills">
+            <div class="info-column col-lg-6 col-md-12">
+                <h3 class="info-heading">My Introduction</h3>
+                <p>Skilled in frontend development with expertise in HTML, CSS, JavaScript, and dynamic
+                    frameworks like Bootstrap, ensuring visually stunning and user-friendly websites.
+                    Proficient backend developer utilizing Node.js to create robust server-side
+                    applications,
+                    coupled with a solid understanding of databases and RESTful APIs for seamless
+                    integration.</p>
+                <button type="button" class="btn link-btn btn-lg download-button"><i class="social icon fas fa-regular fa-download"></i> Download CV</button>
+            </div>
+            <div class="info-cols col-lg-6 col-md-12">
+                <div class="row skills">
+                    <div class="skills-list col-lg-4 col-md-4 col-sm-4">
+                        <h3 class="infos-heading">Frontend</h3>
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>Bootstrap</span>
+                        <span>Javascript</span>
+                        <span>React</span>
+                    </div>
+                    <div class="skills-list col-lg-4 col-md-4 col-sm-4">
+                        <h3 class="infos-heading">Backend</h3>
+                        <span>Node.js</span>
+                        <span>Java</span>
+                        <span>Python</span>
+                        <span>C++</span>
+                    </div>
+                    <div class="skills-list col-lg-4 col-md-4 col-sm-4">
+                        <h3 class="infos-heading">Database</h3>
+                        <span>MYSQL</span>
+                        <span>MongoDB</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="partition" id="projects">
+        <h2 class="section-heading">Projects</h2>
+        <h3>Here are a few projects I've worked on recently</h3>
+        <div class="row project-box">
+                <div class="card card-box col-lg-4 col-md-6 col-sm-6">
+                    <img src="export.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                    <h5 class="card-title">Landing page</h5>
+                    <p class="card-text">Highlighting Feben Ethiopian Coffee's values, services, and seamless client communication through an engaging landing page.</p>
+                    <a href="http://github.com/Eshtaol22" class="btn link-btn"><i class="social-icon fab fa-github"></i> Github</a>
+                    </div>
+                </div>
+                <div class="card col-lg-4 col-md-6 col-sm-6">
+                    <img src="converter.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Temperature Converter</h5>
+                      <p class="card-text">Input temperature, select units, and convert between Celsius, Kelvin, and Fahrenheit. Simple, convenient, and accurate temperature conversions.</p>
+                      <a href="http://github.com/Eshtaol22" class="btn link-btn"><i class="social-icon fab fa-github"></i> Github</a>
+                    </div>
+                </div>
+                <div class="card col-lg-4 col-md-6 col-sm-6">
+                    <img src="cinema.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                    <h5 class="card-title">Cinema Ticketing</h5>
+                    <p class="card-text">Streamlined client sign-up, movie selection, seat reservation, and admin control for seamless cinema operations.</p>
+                    <a href="http://github.com/Eshtaol22" class="btn link-btn"><i class="social-icon fab fa-github"></i> Github</a>
+                    </div>
+                </div>
+        </div>
+    </section>
+    <section  class="white-section" id="inTouch">
+        <h2 class="section-heading contact">Get in touch</h2>
+        <span>Feel free to connect with me.</span>
+        <div class="row contact">
+            <div class="col-lg-6 col-md-6">
+                <div class="contact-info">
+                    <h2>Find Me <i class="uil uil-corner-right-down"></i></h2>
+                    <p><i class="uil uil-envelope"></i> Email: feben.alebe@gmail.com</p>
+                    <p><i class="uil uil-phone"></i> Tel: +251936292022</p>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6">
+                <form id="contactForm">
+                    <div class="form-control">
+                        <div class="form-inputs">
+                            <input type="text" id="name" class="input-field" placeholder="Name">
+                            <input type="text" id="email" class="input-field" placeholder="Email">
+                        </div>
+                        <div class="text-area">
+                            <textarea id="message" placeholder="Message"></textarea>
+                        </div>
+                        <div class="form-button">
+                            <button type="submit" class="btn link-btn btn-lg">Send <i class="social-icon fas fa-solid fa-paper-plane"></i></button>
+                        </div>
+                    </div>
                 </form>
             </div>
-            <div class="address">
-                <h3>FIND ME ON</h3>
-                <p>Feel free to <b>connect</b> with me</p>
-                <div class="sort">
-                    <a class="footer-link" href="mailto:feben.alebe@gmail.com"><img class="icon" src="email_logo.png" alt="email logo"></img></a>
-                </div>
-                <div class="sort">
-                    <a class="footer-link" href="https://x.com/feben_alebe?s=09"><img class="icon" src="twitter_logo.png" alt="Twitter logo"></img></a>
-                </div>
-                <div class="sort">
-                    <a class="footer-link" href="http://github.com/Eshtaol22"><img class="icon" src="github_logo.png" alt="github logo"></img></a>
-                </div>
-                <div class="sort">
-                    <a class="footer-link" href="http://www.linkedin.com/in/feben-alebe"><img class="icon" src="linkedin_logo.png" alt="LinkedIn logo"></img></a>
-                </div>
-                <div class="sort">
-                    <a class="footer-link" href="https://instagram.com/feben_alebe?igshid=NzZlODBkYWE4Ng=="><img class="icon" src="instagram_logo.png" alt="Instagram logo"></img></a>
-                </div>
-            </div>
         </div>
-    </div>
-    <div class="row">
-            <h3>Copyright © 2023 Feben Alebachew</h3>
-    </div>
-</body>
+    </section>
+    <footer id="footer">
+            <div class="icons container-fluid">
+                <div class="conti-icon first"><a href="mailto:feben.alebe@gmail.com"><i class="bottom-icon social-icon fas fa-envelope"></i></a></div>
+                <div class="conti-icon"><a href="https:/t.me/Eshtaol22"><i class="bottom-icon social-icon fab fa-brands fa-telegram"></i></a></div>
+                <div class="conti-icon"><a href="http://github.com/Eshtaol22"><i class="bottom-icon social-icon fab fa-github"></i></a></div>
+                <div class="conti-icon"><a href="http://www.linkedin.com/in/feben-alebe"><i class="bottom-icon social-icon fab fa-brands fa-linkedin"></i></a></div>
+                <div class="conti-icon"><a href="https://x.com/feben_alebe?s=09"><i class="bottom-icon social-icon fab fa-twitter"></i></a></div>
+                <div class="conti-icon"><a href="https://instagram.com/feben_alebe?igshid=NzZlODBkYWE4Ng=="><i class="bottom-icon social-icon fab fa-instagram"></i></a></div>
+            </div>
+            <p class="copyright">Copyright &copy; 2023 all right reserved, Developed by Feben Alebachew</p>
+    </footer>
+    
+    <!-- ----- TYPING JS Link ----- -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+            
+    <!-- ----- SCROLL REVEAL JS Link----- -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- ----- MAIN JS ----- -->
+    <script src="assets/js/script.js"></script>
+    </body>
 </html>
