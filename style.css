@@ -26,7 +26,7 @@ p{
     top: 0;
     right: 0;
     bottom: 0;
-    height: 75px;
+    height: 70px;
     margin: 0;
     padding: 0;
     opacity: 85%;
@@ -69,22 +69,26 @@ p{
     position: relative;
     color: #fff;
     transition: .3;
+    -webkit-transition: .3;
+    -moz-transition: .3;
+    -ms-transition: .3;
+    -o-transition: .3;
 }
 
 .active-link::after {
     content: '';
     position: absolute;
     left: 50%;
-    bottom: -15px;
+    bottom: -1px;
     transform: translate(-50%, -50%);
     width: 5px;
     height: 5px;
     background: #fff;
     border-radius: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
+    -webkit-transform: translate();
+    -moz-transform: translate();
+    -ms-transform: translate();
+    -o-transform: translate();
 }
 
 /* Title Section */
@@ -205,6 +209,7 @@ p{
 }
 
 /*----button and other ---*/
+
 .download{
     color: #eaf1f6;
     text-decoration: none;
@@ -371,7 +376,14 @@ p{
     -o-border-radius: 10px;
 }
 
-.contact-info h2 {
+iframe{
+    width: 600px;
+    height: 450px;
+    border: 0;
+
+}
+
+/* .contact-info h2 {
     color: #fff;
     margin-bottom: 20px;
 }
@@ -397,7 +409,7 @@ p{
 .contact-info:hover.contact-info i {
     color: #777;
     z-index: 2;
-}
+} */
 
 /* ----- CONTACT FORM ----- */
 .form-control {
