@@ -44,7 +44,7 @@ p{
 }
 
 .navbar-toggler{
-    padding-right: 5%;
+    margin-right: 5%;
 }
 
 .nav-menu.show{
@@ -526,7 +526,6 @@ textarea {
         padding: 0;
     }
 
-
     .text-center,
     .text-center img {
         width: 320px;
@@ -614,11 +613,70 @@ textarea {
     }
 }
 
-@media only screen and (max-width: 628px){
-    .navbar-brand{
-        padding-left: 9%;
+@media only screen and (max-width: 670px){
+    .box1{
+        position: relative !important;
+        margin-top: 63% !important;
+        width: 87%;
+        padding-left: 13%;
     }
-    .first {
-        padding-left: 25%;
+    .text-center{
+        position: relative !important;
+        margin-top: -120% !important;
+        padding-left: 20%;
+    }
+    .navbar,.container-fluid{
+        width: 97%;
+    }
+    .container{
+        width: 96%;
+    }
+    .navbar-brand{
+        padding-left: 7%;
+    }
+    .container-fluid{
+        padding: 6% 0 5% 3% !important;
+    }
+}
+@media only screen and (max-width: 556px){
+    .box1{
+        position: relative !important;
+        margin-top: 78% !important;
+        width: 87%;
+        padding-left: 13%;
+    }
+    .text-center{
+        position: relative !important;
+        margin-top: -138% !important;
+        padding-left: 20%;
+    }
+}
+@media only screen and (max-width: 548px){
+    .box1{
+        position: relative !important;
+        margin-top: 84% !important;
+        width: 87%;
+        padding-left: 13%;
+    }
+    .text-center{
+        position: relative !important;
+        margin-top: -160% !important;
+        padding-left: 20%;
+    }
+    .first{
+        padding-left: 20% !important;
+    }
+}
+@media only screen and (max-width: 502px){
+    .box1{
+        position: relative !important;
+        margin-top: 88% !important;
+        width: 87%;
+        padding-left: 13%;
+    }
+    .text-center{
+        position: relative !important;
+        margin-top: -174% !important;
+        padding-left: 20%;
     }
 }
