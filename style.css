@@ -10,6 +10,7 @@ h1, h2, h3, h4, h5, h6 {
 p{
     color: #8f8f8f;
 }
+
 /* Container */
 
 .container{
@@ -386,14 +387,14 @@ p{
     -o-border-radius: 10px;
 }
 
-iframe{
+/* iframe{
     width: 600px;
     height: 450px;
     border: 0;
 
-}
+} */
 
-/* .contact-info h2 {
+.contact-info h2 {
     color: #fff;
     margin-bottom: 20px;
 }
@@ -417,9 +418,9 @@ iframe{
 .contact-info:hover.contact-info h2,
 .contact-info:hover.contact-info p,
 .contact-info:hover.contact-info i {
-    color: #777;
+    color: black;
     z-index: 2;
-} */
+}
 
 /* ----- CONTACT FORM ----- */
 .form-control {
@@ -622,14 +623,14 @@ textarea {
     }
     .text-center{
         position: relative !important;
-        margin-top: -120% !important;
+        margin-top: -118% !important;
         padding-left: 20%;
     }
     .navbar,.container-fluid{
         width: 97%;
     }
     .container{
-        width: 96%;
+        width: 96% !important;
     }
     .navbar-brand{
         padding-left: 7%;
