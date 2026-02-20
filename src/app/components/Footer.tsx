@@ -1,26 +1,40 @@
 import { Heart } from "lucide-react";
 
-export function Footer() {
+interface FooterProps {
+  darkMode: boolean;
+}
+
+export function Footer({ darkMode }: FooterProps) {
   return (
-    <footer className="py-12 px-6 bg-black border-t border-gray-800">
+    <footer className={`py-12 px-6 border-t ${
+      darkMode ? 'bg-gray-950 border-gray-800' : 'bg-gray-50 border-gray-200'
+    }`}>
       <div className="max-w-7xl mx-auto">
         <div className="grid md:grid-cols-3 gap-8 mb-8">
           {/* Brand */}
           <div>
-            <div className="text-xl font-bold text-white mb-4">
+            <div className={`text-xl font-bold mb-4 ${
+              darkMode ? 'text-white' : 'text-gray-900'
+            }`}>
               <span className="text-orange-500">{"<"}</span>
               Feben Alebachew
               <span className="text-orange-500">{"/>"}</span>
             </div>
-            <p className="text-gray-400 leading-relaxed">
+            <p className={`leading-relaxed ${
+              darkMode ? 'text-gray-400' : 'text-gray-600'
+            }`}>
               Creating exceptional digital experiences through design, development, and strategic support.
             </p>
           </div>
 
           {/* Quick Links */}
           <div>
-            <h4 className="font-semibold text-white mb-4">Quick Links</h4>
-            <ul className="space-y-2 text-gray-400">
+            <h4 className={`font-semibold mb-4 ${
+              darkMode ? 'text-white' : 'text-gray-900'
+            }`}>Quick Links</h4>
+            <ul className={`space-y-2 ${
+              darkMode ? 'text-gray-400' : 'text-gray-600'
+            }`}>
               <li>
                 <button
                   onClick={() => document.getElementById("about")?.scrollIntoView({ behavior: "smooth" })}
@@ -58,8 +72,12 @@ export function Footer() {
 
           {/* Contact Info */}
           <div>
-            <h4 className="font-semibold text-white mb-4">Get in Touch</h4>
-            <ul className="space-y-2 text-gray-400">
+            <h4 className={`font-semibold mb-4 ${
+              darkMode ? 'text-white' : 'text-gray-900'
+            }`}>Get in Touch</h4>
+            <ul className={`space-y-2 ${
+              darkMode ? 'text-gray-400' : 'text-gray-600'
+            }`}>
               <li className="hover:text-orange-500 transition-colors">feben.alebe@gmail.com</li>
               <li>Available for freelance projects</li>
             </ul>
@@ -67,9 +85,11 @@ export function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="pt-8 border-t border-gray-800 text-center text-gray-400">
+        <div className={`pt-8 border-t text-center ${
+          darkMode ? 'border-gray-800 text-gray-400' : 'border-gray-200 text-gray-600'
+        }`}>
           <p className="flex items-center justify-center gap-2">
-            Made with <Heart size={16} className="text-orange-500 fill-current" /> © 2026 All rights reserved.
+            Designed & Built by <span className="text-orange-500 font-semibold">Feben Alebachew</span> © 2026
           </p>
         </div>
       </div>

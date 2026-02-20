@@ -1,5 +1,5 @@
 
-  # Personal Portfolio Website
+  # My Personal Portfolio
 
   ## Running the code
 
