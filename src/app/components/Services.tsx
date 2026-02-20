@@ -20,9 +20,9 @@ export function Services({ darkMode }: ServicesProps) {
     },
     {
       icon: Headphones,
-      title: "Virtual & Executive Assistance",
-      description: "Streamlining your operations with professional administrative support. From calendar management to project coordination, I help you stay organized and focused on what matters most.",
-      features: ["Calendar Management", "Email Organization", "Project Coordination", "Research & Documentation"]
+      title: "Project Management & Operational Leadership",
+      description: "Driving projects from concept to completion with structured planning, clear communication, and strategic execution. I ensure teams stay aligned, timelines are met, and objectives are delivered efficiently—so your organization can focus on growth and impact.",
+      features: ["Project Planning & Execution", "Timeline & Milestone Management", "Team Coordination & Stakeholder Communication", "Risk Assessment & Process Optimization","Documentation & Performance Reporting"]
     }
   ];
 

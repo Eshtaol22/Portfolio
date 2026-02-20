@@ -7,19 +7,19 @@ interface TestimonialsProps {
 export function Testimonials({ darkMode }: TestimonialsProps) {
   const testimonials = [
     {
-      name: "Sarah Johnson",
+      name: "feben",
       role: "CEO, TechStart Inc.",
       content: "Working with this professional was an absolute pleasure. The combination of design expertise and technical skills resulted in a product that exceeded our expectations.",
       avatar: "SJ"
     },
     {
-      name: "Michael Chen",
+      name: "Mr. a",
       role: "Product Manager, Digital Solutions",
-      content: "The attention to detail and organizational skills demonstrated throughout our project were exceptional. Highly recommend for both development and virtual assistance needs.",
+      content: "The attention to detail and organizational skills demonstrated throughout our project were exceptional. Highly recommend for both development and project management needs.",
       avatar: "MC"
     },
     {
-      name: "Emily Rodriguez",
+      name: "blabla",
       role: "Founder, Creative Agency",
       content: "A rare find who can seamlessly handle design, development, and project coordination. The efficiency and quality of work delivered were outstanding.",
       avatar: "ER"

@@ -35,8 +35,8 @@ export function Skills({ darkMode }: SkillsProps) {
       title: "Tools & Platforms",
       skills: [
         { name: "Google Workspace", level: 95 },
-        { name: "Slack", level: 90 },
-        { name: "Zoom", level: 90 },
+        { name: "Slack", level: 95 },
+        { name: "Zoom", level: 100 },
         { name: "Asana/Trello", level: 85 }
       ]
     }
