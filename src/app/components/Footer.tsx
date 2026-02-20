@@ -9,7 +9,7 @@ export function Footer() {
           <div>
             <div className="text-xl font-bold text-white mb-4">
               <span className="text-orange-500">{"<"}</span>
-              Portfolio
+              Feben Alebachew
               <span className="text-orange-500">{"/>"}</span>
             </div>
             <p className="text-gray-400 leading-relaxed">
@@ -60,7 +60,7 @@ export function Footer() {
           <div>
             <h4 className="font-semibold text-white mb-4">Get in Touch</h4>
             <ul className="space-y-2 text-gray-400">
-              <li className="hover:text-orange-500 transition-colors">hello@example.com</li>
+              <li className="hover:text-orange-500 transition-colors">feben.alebe@gmail.com</li>
               <li>Available for freelance projects</li>
             </ul>
           </div>

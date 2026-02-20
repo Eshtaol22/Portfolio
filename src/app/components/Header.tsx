@@ -19,7 +19,7 @@ export function Header() {
           {/* Logo */}
           <div className="text-xl font-bold text-white">
             <span className="text-orange-500">{"<"}</span>
-            Portfolio
+            Feben Alebachew
             <span className="text-orange-500">{"/>"}</span>
           </div>
 

@@ -50,7 +50,7 @@ export function About() {
               and powerful technology. My expertise spans{" "}
               <span className="text-orange-500 font-semibold">UI/UX design</span>,{" "}
               <span className="text-orange-500 font-semibold">full-stack development</span>, and{" "}
-              <span className="text-orange-500 font-semibold">executive assistance</span> — 
+              <span className="text-orange-500 font-semibold">project management</span> — 
               a unique combination that allows me to see projects from every angle.
             </p>
             

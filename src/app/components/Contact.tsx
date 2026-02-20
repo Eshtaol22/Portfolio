@@ -134,7 +134,7 @@ export function Contact() {
               </a>
 
               <a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/in/feben-alebe/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group flex items-center gap-4 p-4 bg-gradient-to-br from-gray-800/40 to-gray-900/40 rounded-lg border border-gray-800 hover:border-orange-500/50 transition-all duration-300 backdrop-blur-sm"
@@ -149,7 +149,7 @@ export function Contact() {
               </a>
 
               <a
-                href="https://github.com"
+                href="https://github.com/Eshtaol22"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group flex items-center gap-4 p-4 bg-gradient-to-br from-gray-800/40 to-gray-900/40 rounded-lg border border-gray-800 hover:border-orange-500/50 transition-all duration-300 backdrop-blur-sm"
