@@ -107,17 +107,18 @@ export function Hero({ darkMode }: HeroProps) {
                 View Projects
                 <ArrowRight className="group-hover:translate-x-1 transition-transform" size={20} />
               </button>
-              <button
-                onClick={() => scrollToSection("contact")}
+              <a
+                href="/assets/resume.pdf"
+                download="Feben_Alebachew_Resume.pdf"
                 className={`px-8 py-4 rounded-lg transition-all border-2 flex items-center justify-center gap-2 font-semibold ${
                   darkMode 
                     ? 'bg-transparent text-white border-gray-700 hover:bg-white/5 hover:border-orange-500' 
                     : 'bg-white text-gray-900 border-gray-300 hover:bg-gray-50 hover:border-orange-500'
                 }`}
               >
-                Contact Me
+                Download Resume
                 <Download size={20} />
-              </button>
+              </a>
             </div>
           </div>
 
@@ -145,7 +146,7 @@ export function Hero({ darkMode }: HeroProps) {
               </div>
               
               <ImageWithFallback
-                src="https://images.unsplash.com/photo-1743865318726-0c6966e0c153?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjB3b21hbiUyMGRlc2lnbmVyJTIwd29ya3NwYWNlfGVufDF8fHx8MTc3MTQwNjAzMnww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+                src="/assets/my photo.jpg"
                 alt="Feben Alebachew - Professional Profile"
                 className="relative z-10 w-full h-full object-cover rounded-3xl"
               />

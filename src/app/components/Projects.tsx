@@ -1,6 +1,7 @@
 import { ExternalLink, ChevronLeft, ChevronRight } from "lucide-react";
-import doctorImage from "../../assets/port.png";
-import churchImage from "../../assets/port 2.png";
+import { ImageWithFallback } from "./figma/ImageWithFallback";
+import churchImage from "../../../public/assets/port.png";
+import doctorImage from "../../../public/assets/port 2.png";
 import { useState, useRef } from "react";
 
 interface ProjectsProps {
@@ -16,47 +17,47 @@ export function Projects({ darkMode }: ProjectsProps) {
       title: "Doctor Assistant Mobile App Design",
       description: "An intuitive mobile app design that supports doctors in managing patient interactions, symptom tracking, and medical documentation with clarity and efficiency.",
       image: doctorImage,
-      link: "https://www.figma.com/design/STnongsEihn5mI1jBMff7h/AI-doctor-clinical-asssistant?node-id=0-1&p=f&t=4vcSurrptOGUNYdn-0",
-      tags: ["UI/UX", "Mobile Design", "Prototyping"]
+      tags: ["UI/UX", "Mobile Design", "Prototyping"],
+      link: "https://www.figma.com/design/STnongsEihn5mI1jBMff7h/AI-doctor-clinical-asssistant?node-id=0-1&p=f&t=4vcSurrptOGUNYdn-0"
     },
     {
-      title: "Mobile App Interface",
+      title: "Church Website Design & Development",
       description: "A fully responsive church website designed and developed to enhance online presence, community engagement, and seamless access to events, sermons, and contact information.",
       image: churchImage,
-      link: "https://kabodemmanuel-adama.vercel.app/",
-      tags: ["UI/UX", "React", "Node.js", "MongoDB"]
+      tags: ["UI/UX", "React", "Node.js", "MongsoDB"],
+      link: "https://kabodemmanuel-adama.vercel.app/"
     },
     {
       title: "Analytics Dashboard",
       description: "Data visualization dashboard for real-time analytics with interactive charts and comprehensive reporting features.",
       image: churchImage,
-      link: "https://kabodemmanuel-adama.vercel.app/",
-      tags: ["React", "Node.js", "D3.js", "PostgreSQL"]
+      tags: ["React", "Node.js", "D3.js", "PostgreSQL"],
+      link: "https://kabodemmanuel-adama.vercel.app/"
     },
     {
       title: "E-Commerce Platform",
       description: "Full-stack e-commerce solution with product management, shopping cart, and secure payment integration.",
       image: churchImage,
-      link: "https://kabodemmanuel-adama.vercel.app/",
-      tags: ["Next.js", "MongoDB", "Stripe", "REST API"]
+      tags: ["Next.js", "MongoDB", "Stripe", "REST API"],
+      link: "https://kabodemmanuel-adama.vercel.app/"
     },
     {
       title: "Task Management System",
       description: "Collaborative project management tool with task tracking, team communication, and progress monitoring.",
       image: churchImage,
-      link: "https://kabodemmanuel-adama.vercel.app/",
-      tags: ["Vue.js", "Express", "WebSocket", "MySQL"]
+      tags: ["Vue.js", "Express", "WebSocket", "MySQL"],
+      link: "https://kabodemmanuel-adama.vercel.app/"
     },
     {
       title: "SaaS Landing Page",
       description: "High-converting landing page design with modern aesthetics, clear value proposition, and optimized user flow.",
       image: churchImage,
-      link: "https://kabodemmanuel-adama.vercel.app/",
-      tags: ["Figma", "HTML/CSS", "JavaScript", "SEO"]
+      tags: ["Figma", "HTML/CSS", "JavaScript", "SEO"],
+      link: "https://kabodemmanuel-adama.vercel.app/"
     }
   ];
 
-  const scrollByProjects = (direction: 'prev' | 'next') => {
+   const scrollByProjects = (direction: 'prev' | 'next') => {
     if (containerRef.current) {
       const container = containerRef.current;
       const scrollAmount = container.offsetWidth; // Scroll by the full container width (shows 3 cards)
@@ -196,17 +197,14 @@ export function Projects({ darkMode }: ProjectsProps) {
                     </div>
 
                     {/* View Details Button */}
-                    <a
+                    <a 
                       href={project.link}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="flex items-center gap-2 text-orange-500 hover:text-orange-400 font-semibold group/btn text-sm"
                     >
                       View Details
-                      <ExternalLink
-                        size={16}
-                        className="group-hover/btn:translate-x-1 group-hover/btn:-translate-y-1 transition-transform"
-                      />
+                      <ExternalLink size={16} className="group-hover/btn:translate-x-1 group-hover/btn:-translate-y-1 transition-transform" />
                     </a>
                   </div>
 

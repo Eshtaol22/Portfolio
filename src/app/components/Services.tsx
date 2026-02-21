@@ -20,9 +20,9 @@ export function Services({ darkMode }: ServicesProps) {
     },
     {
       icon: Headphones,
-      title: "Project Management & Operational Leadership",
-      description: "Leading projects from concept to completion through strategic planning, clear communication, and efficient execution—ensuring alignment, timely delivery, and measurable impact.",
-      features: ["Project Planning & Execution", "Timeline & Milestone Management", "Team Coordination & Stakeholder Communication", "Risk Assessment & Process Optimization","Documentation & Performance Reporting"]
+      title: "Project Management",
+      description: "Leading projects from conception to completion with strategic planning and seamless execution. I coordinate teams, manage timelines, and ensure every deliverable meets the highest standards.",
+      features: ["Agile/Scrum Leadership", "Timeline Management", "Team Coordination", "Stakeholder Communication"]
     }
   ];
 
