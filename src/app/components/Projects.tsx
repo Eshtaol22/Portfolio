@@ -1,5 +1,6 @@
 import { ExternalLink, ChevronLeft, ChevronRight } from "lucide-react";
-import { ImageWithFallback } from "./figma/ImageWithFallback";
+import doctorImage from "../../assets/port.png";
+import churchImage from "../../assets/port 2.png";
 import { useState, useRef } from "react";
 
 interface ProjectsProps {
@@ -12,39 +13,45 @@ export function Projects({ darkMode }: ProjectsProps) {
 
   const projects = [
     {
-      title: "Modern Web Design Platform",
-      description: "A comprehensive design system and component library for building modern web applications with consistent UI/UX.",
-      image: "https://images.unsplash.com/photo-1630522790858-50b4ef44944b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjB3ZWIlMjBkZXNpZ24lMjBtb2NrdXB8ZW58MXx8fHwxNzcxNTAyOTI1fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-      tags: ["Figma", "React", "TypeScript", "Tailwind CSS"]
+      title: "Doctor Assistant Mobile App Design",
+      description: "An intuitive mobile app design that supports doctors in managing patient interactions, symptom tracking, and medical documentation with clarity and efficiency.",
+      image: doctorImage,
+      link: "https://www.figma.com/design/STnongsEihn5mI1jBMff7h/AI-doctor-clinical-asssistant?node-id=0-1&p=f&t=4vcSurrptOGUNYdn-0",
+      tags: ["UI/UX", "Mobile Design", "Prototyping"]
     },
     {
       title: "Mobile App Interface",
-      description: "User-centric mobile application design focused on seamless navigation and engaging user experience.",
-      image: "https://images.unsplash.com/photo-1661246627162-feb0269e0c07?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2JpbGUlMjBhcHAlMjBpbnRlcmZhY2UlMjBkZXNpZ258ZW58MXx8fHwxNzcxNDY2OTg2fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-      tags: ["UI/UX", "Mobile Design", "Prototyping"]
+      description: "A fully responsive church website designed and developed to enhance online presence, community engagement, and seamless access to events, sermons, and contact information.",
+      image: churchImage,
+      link: "https://kabodemmanuel-adama.vercel.app/",
+      tags: ["UI/UX", "React", "Node.js", "MongoDB"]
     },
     {
       title: "Analytics Dashboard",
       description: "Data visualization dashboard for real-time analytics with interactive charts and comprehensive reporting features.",
-      image: "https://images.unsplash.com/photo-1759752394755-1241472b589d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkYXNoYm9hcmQlMjBhbmFseXRpY3MlMjBpbnRlcmZhY2V8ZW58MXx8fHwxNzcxNDgzOTEzfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      image: churchImage,
+      link: "https://kabodemmanuel-adama.vercel.app/",
       tags: ["React", "Node.js", "D3.js", "PostgreSQL"]
     },
     {
       title: "E-Commerce Platform",
       description: "Full-stack e-commerce solution with product management, shopping cart, and secure payment integration.",
-      image: "https://images.unsplash.com/photo-1694599048261-a1de00f0117e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxlY29tbWVyY2UlMjB3ZWJzaXRlJTIwZGVzaWdufGVufDF8fHx8MTc3MTQyNDc0OHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      image: churchImage,
+      link: "https://kabodemmanuel-adama.vercel.app/",
       tags: ["Next.js", "MongoDB", "Stripe", "REST API"]
     },
     {
       title: "Task Management System",
       description: "Collaborative project management tool with task tracking, team communication, and progress monitoring.",
-      image: "https://images.unsplash.com/photo-1758611972975-5b7e6568eeeb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0YXNrJTIwbWFuYWdlbWVudCUyMGFwcGxpY2F0aW9ufGVufDF8fHx8MTc3MTUxODAzMHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      image: churchImage,
+      link: "https://kabodemmanuel-adama.vercel.app/",
       tags: ["Vue.js", "Express", "WebSocket", "MySQL"]
     },
     {
       title: "SaaS Landing Page",
       description: "High-converting landing page design with modern aesthetics, clear value proposition, and optimized user flow.",
-      image: "https://images.unsplash.com/photo-1630522790858-50b4ef44944b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjB3ZWIlMjBkZXNpZ24lMjBtb2NrdXB8ZW58MXx8fHwxNzcxNTAyOTI1fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      image: churchImage,
+      link: "https://kabodemmanuel-adama.vercel.app/",
       tags: ["Figma", "HTML/CSS", "JavaScript", "SEO"]
     }
   ];
@@ -189,10 +196,18 @@ export function Projects({ darkMode }: ProjectsProps) {
                     </div>
 
                     {/* View Details Button */}
-                    <button className="flex items-center gap-2 text-orange-500 hover:text-orange-400 font-semibold group/btn text-sm">
+                    <a
+                      href={project.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 text-orange-500 hover:text-orange-400 font-semibold group/btn text-sm"
+                    >
                       View Details
-                      <ExternalLink size={16} className="group-hover/btn:translate-x-1 group-hover/btn:-translate-y-1 transition-transform" />
-                    </button>
+                      <ExternalLink
+                        size={16}
+                        className="group-hover/btn:translate-x-1 group-hover/btn:-translate-y-1 transition-transform"
+                      />
+                    </a>
                   </div>
 
                   {/* Hover glow effect */}
