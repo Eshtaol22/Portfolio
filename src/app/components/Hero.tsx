@@ -149,9 +149,9 @@ export function Hero({ darkMode }: HeroProps) {
                     alt="Feben Alebachew - Professional Profile"
                     className="w-full h-full object-cover"
                     style={{
-                      objectPosition: '50% 20%',
+                      objectPosition: '50% 40%',
                       filter: 'brightness(1.05) contrast(1.1) saturate(1.1)',
-                      transform: 'scale(2.5)'
+                      transform: 'scale(3.2)'
                     }}
                   />
                 </div>
