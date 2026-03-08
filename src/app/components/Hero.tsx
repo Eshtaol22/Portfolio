@@ -1,6 +1,7 @@
 import { ArrowRight, Download } from "lucide-react";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
 import { useEffect, useState } from "react";
+import profileImage from "../../../public/assets/port-img.jpg";
 
 interface HeroProps {
   darkMode: boolean;
@@ -108,7 +109,7 @@ export function Hero({ darkMode }: HeroProps) {
                 <ArrowRight className="group-hover:translate-x-1 transition-transform" size={20} />
               </button>
               <a
-                href="/assets/resume.pdf"
+                href="/assets/Feben Alebachew CV.pdf"
                 download="Feben_Alebachew_Resume.pdf"
                 className={`px-8 py-4 rounded-lg transition-all border-2 flex items-center justify-center gap-2 font-semibold ${
                   darkMode 
@@ -140,16 +141,21 @@ export function Hero({ darkMode }: HeroProps) {
                   ? 'bg-gradient-to-br from-orange-500 via-orange-600 to-orange-700' 
                   : 'bg-gradient-to-br from-orange-500 via-orange-400 to-orange-300'
               }`}>
-                <div className={`w-full h-full rounded-3xl ${
+                <div className={`w-full h-full rounded-3xl overflow-hidden ${
                   darkMode ? 'bg-gray-900' : 'bg-white'
-                }`}></div>
+                }`}>
+                  <ImageWithFallback
+                    src={profileImage}
+                    alt="Feben Alebachew - Professional Profile"
+                    className="w-full h-full object-cover"
+                    style={{
+                      objectPosition: '50% 20%',
+                      filter: 'brightness(1.05) contrast(1.1) saturate(1.1)',
+                      transform: 'scale(2.5)'
+                    }}
+                  />
+                </div>
               </div>
-              
-              <ImageWithFallback
-                src="/assets/my photo.jpg"
-                alt="Feben Alebachew - Professional Profile"
-                className="relative z-10 w-full h-full object-cover rounded-3xl"
-              />
             </div>
           </div>
         </div>
