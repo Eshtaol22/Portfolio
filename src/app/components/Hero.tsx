@@ -170,7 +170,7 @@ export function Hero({ darkMode }: HeroProps) {
                   }`}
                 >
                   <ImageWithFallback
-                    src="/assets/port-img.jpg"
+                    src="/assets/port-img.JPG"
                     alt="Feben Alebachew - Professional Profile"
                     className="w-full h-full object-cover"
                     style={{
