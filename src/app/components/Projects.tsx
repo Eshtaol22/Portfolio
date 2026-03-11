@@ -2,7 +2,7 @@ import { ExternalLink, ChevronLeft, ChevronRight } from "lucide-react";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
 import churchImage from "../../../public/assets/port.png";
 import doctorImage from "../../../public/assets/port 2.png";
-import healthlinkImage from "../../../public/assets/port 2.png";
+import healthlinkImage from "../../../public/assets/healthlink.png";
 import xonnoImage from "../../../public/assets/Xonno.jpg";
 import { useState, useRef } from "react";
 
