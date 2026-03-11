@@ -2,6 +2,8 @@ import { ExternalLink, ChevronLeft, ChevronRight } from "lucide-react";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
 import churchImage from "../../../public/assets/port.png";
 import doctorImage from "../../../public/assets/port 2.png";
+import healthlinkImage from "../../../public/assets/port 2.png";
+import xonnoImage from "../../../public/assets/Xonno.jpg";
 import { useState, useRef } from "react";
 
 interface ProjectsProps {
@@ -28,18 +30,18 @@ export function Projects({ darkMode }: ProjectsProps) {
       link: "https://kabodemmanuel-adama.vercel.app/"
     },
     {
-      title: "Analytics Dashboard",
-      description: "Data visualization dashboard for real-time analytics with interactive charts and comprehensive reporting features.",
-      image: churchImage,
-      tags: ["React", "Node.js", "D3.js", "PostgreSQL"],
-      link: "https://kabodemmanuel-adama.vercel.app/"
+      title: "HealthLink EHR System",
+      description: "Created the full UI/UX design of HealthLink’s Electronic Health Record system and developed the front-end, ensuring a seamless web experience for managing patient data.",
+      image: healthlinkImage,
+      tags: ["UI/UX", "React", "Node.js", "TypeScript"],
+      link: "https://health-link-ehr.vercel.app"
     },
     {
-      title: "E-Commerce Platform",
-      description: "Full-stack e-commerce solution with product management, shopping cart, and secure payment integration.",
-      image: churchImage,
-      tags: ["Next.js", "MongoDB", "Stripe", "REST API"],
-      link: "https://kabodemmanuel-adama.vercel.app/"
+      title: "Xonno Landing Page",
+      description: "Designed the landing page for Xonno, a platform that lets users trade, stake, and grow their crypto wallet. Created responsive web and mobile layouts with intuitive UX and modern UI.",
+      image: xonnoImage,
+      tags: ["UI/UX", "Mobile Design", "Web Design"],
+      link: "https://www.figma.com/design/ztDaPA8EcU3Vx1F7GKgWL5/Xonno?node-id=0-1&t=7FHxaqqwLwlCHOjV-1"
     },
     {
       title: "Task Management System",

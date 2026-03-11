@@ -97,7 +97,7 @@ export function Hero({ darkMode }: HeroProps) {
                     : "bg-white/90 backdrop-blur-xl border border-gray-200"
                 }`}
               >
-                <div className="text-3xl font-bold text-orange-500">5+</div>
+                <div className="text-3xl font-bold text-orange-500">3+</div>
                 <div className={`text-sm ${darkMode ? "text-gray-400" : "text-gray-600"}`}>
                   Years Experience
                 </div>
@@ -110,7 +110,7 @@ export function Hero({ darkMode }: HeroProps) {
                     : "bg-white/90 backdrop-blur-xl border border-gray-200"
                 }`}
               >
-                <div className="text-3xl font-bold text-orange-500">50+</div>
+                <div className="text-3xl font-bold text-orange-500">10+</div>
                 <div className={`text-sm ${darkMode ? "text-gray-400" : "text-gray-600"}`}>
                   Projects Completed
                 </div>
@@ -128,8 +128,8 @@ export function Hero({ darkMode }: HeroProps) {
               </button>
 
               <a
-                href="/assets/Feben Alebachew CV.pdf"
-                download="Feben_Alebachew_Resume.pdf"
+                href="/assets/Resume.pdf"
+                download="Resume.pdf"
                 className={`px-8 py-4 rounded-lg transition-all border-2 flex items-center justify-center gap-2 font-semibold ${
                   darkMode
                     ? "bg-transparent text-white border-gray-700 hover:bg-white/5 hover:border-orange-500"
