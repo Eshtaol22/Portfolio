@@ -8,6 +8,7 @@ import { Skills } from "./components/Skills";
 import { Testimonials } from "./components/Testimonials";
 import { Contact } from "./components/Contact";
 import { Footer } from "./components/Footer";
+import { Toaster } from "sonner";
 
 export default function App() {
   // Initialize dark mode from localStorage or default to false (light mode)
@@ -60,6 +61,17 @@ export default function App() {
         <Contact darkMode={darkMode} />
       </main>
       <Footer darkMode={darkMode} />
+      <Toaster 
+        position="top-right"
+        theme={darkMode ? 'dark' : 'light'}
+        toastOptions={{
+          style: {
+            background: darkMode ? '#1f2937' : '#ffffff',
+            color: darkMode ? '#f3f4f6' : '#111827',
+            border: darkMode ? '1px solid #374151' : '1px solid #e5e7eb',
+          },
+        }}
+      />
     </div>
   );
 }

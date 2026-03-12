@@ -1,5 +1,7 @@
 import { Mail, Linkedin, Github, Send } from "lucide-react";
 import { useState } from "react";
+import emailjs from "@emailjs/browser";
+import { toast } from "sonner";
 
 interface ContactProps {
   darkMode: boolean;
@@ -11,22 +13,49 @@ export function Contact({ darkMode }: ContactProps) {
     email: "",
     message: ""
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     
-    // Create mailto link with form data
-    const subject = encodeURIComponent(`Portfolio Contact from ${formData.name}`);
-    const body = encodeURIComponent(
-      `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`
-    );
-    const mailtoLink = `mailto:feben.alebe@gmail.com?subject=${subject}&body=${body}`;
-    
-    // Open email client
-    window.location.href = mailtoLink;
-    
-    // Reset form
-    setFormData({ name: "", email: "", message: "" });
+    // Validate all fields are filled
+    if (!formData.name.trim() || !formData.email.trim() || !formData.message.trim()) {
+      toast.error("Please fill in all fields before sending!");
+      return;
+    }
+
+    setIsSubmitting(true);
+
+    try {
+      // EmailJS Configuration
+      const serviceId = "service_6blf2k7";
+      const templateId = "template_ptq2arg";
+      const publicKey = "e07g891xViEhl9KSe";
+
+      // Send email using EmailJS
+      const result = await emailjs.send(
+        serviceId,
+        templateId,
+        {
+          from_name: formData.name,
+          from_email: formData.email,
+          message: formData.message,
+          to_email: "feben.alebe@gmail.com",
+        },
+        publicKey
+      );
+
+      console.log("EmailJS Success:", result);
+      toast.success("Message sent successfully! I'll get back to you soon.");
+      
+      // Reset form
+      setFormData({ name: "", email: "", message: "" });
+    } catch (error) {
+      console.error("EmailJS Error:", error);
+      toast.error("Failed to send message. Please try again or email me directly.");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -147,10 +176,15 @@ export function Contact({ darkMode }: ContactProps) {
 
               <button
                 type="submit"
-                className="w-full px-8 py-4 bg-orange-500 text-white rounded-lg hover:bg-orange-600 transition-all shadow-lg shadow-orange-500/30 hover:shadow-orange-500/50 flex items-center justify-center gap-2 group font-semibold"
+                disabled={isSubmitting}
+                className={`w-full px-8 py-4 rounded-lg transition-all shadow-lg flex items-center justify-center gap-2 group font-semibold ${
+                  isSubmitting 
+                    ? 'bg-orange-400 cursor-not-allowed' 
+                    : 'bg-orange-500 hover:bg-orange-600 shadow-orange-500/30 hover:shadow-orange-500/50'
+                } text-white`}
               >
-                Send Message
-                <Send className="group-hover:translate-x-1 transition-transform" size={20} />
+                {isSubmitting ? "Sending..." : "Send Message"}
+                {!isSubmitting && <Send className="group-hover:translate-x-1 transition-transform" size={20} />}
               </button>
             </form>
           </div>
