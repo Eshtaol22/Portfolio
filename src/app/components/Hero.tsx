@@ -169,13 +169,8 @@ export function Hero({ darkMode }: HeroProps) {
                     darkMode ? "bg-gray-900" : "bg-white"
                   }`}
                 >
-                  {/*<ImageWithFallback
-                    src="/assets/port-img.jpg"
-                    alt="Feben Alebachew - Professional Profile"
-                    className="w-full h-full object-cover"
-                    style={{*/}
                     <ImageWithFallback
-                    src="https://drive.google.com/uc?export=view&id=1gD736gTKpofKPTVBzt4ICGIu_HqjCT3e"
+                    src="/assets/port-img.JPG"
                     alt="Feben Alebachew - Professional Profile"
                     className="w-full h-full object-cover"
                     style={{
