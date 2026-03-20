@@ -43,7 +43,7 @@ export function Projects({ darkMode }: ProjectsProps) {
       tags: ["UI/UX", "Mobile Design", "Web Design"],
       link: "https://www.figma.com/design/ztDaPA8EcU3Vx1F7GKgWL5/Xonno?node-id=0-1&t=7FHxaqqwLwlCHOjV-1"
     },
-    {
+    /*{
       title: "Task Management System",
       description: "Collaborative project management tool with task tracking, team communication, and progress monitoring.",
       image: churchImage,
@@ -56,7 +56,7 @@ export function Projects({ darkMode }: ProjectsProps) {
       image: churchImage,
       tags: ["Figma", "HTML/CSS", "JavaScript", "SEO"],
       link: "https://kabodemmanuel-adama.vercel.app/"
-    }
+    }*/
   ];
 
    const scrollByProjects = (direction: 'prev' | 'next') => {

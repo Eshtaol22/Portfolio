@@ -1,7 +1,7 @@
 import { ArrowRight, Download } from "lucide-react";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
 import { useEffect, useState } from "react";
-import portImg from "./port-img.jpg";
+import portImg from "../components/figma/port-img.jpg";
 
 interface HeroProps {
   darkMode: boolean;
