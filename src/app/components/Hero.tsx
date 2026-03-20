@@ -1,7 +1,6 @@
 import { ArrowRight, Download } from "lucide-react";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
 import { useEffect, useState } from "react";
-import portImg from "../components/figma/port-img.jpg";
 
 interface HeroProps {
   darkMode: boolean;
@@ -170,9 +169,8 @@ export function Hero({ darkMode }: HeroProps) {
                     darkMode ? "bg-gray-900" : "bg-white"
                   }`}
                 >
-                    <ImageWithFallback
-                    //src="/assets/port-img.jpg"
-                    src={portImg}
+                  <ImageWithFallback
+                    src="/assets/port-img.jpg"
                     alt="Feben Alebachew - Professional Profile"
                     className="w-full h-full object-cover"
                     style={{
