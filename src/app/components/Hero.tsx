@@ -128,7 +128,7 @@ export function Hero({ darkMode }: HeroProps) {
               </button>
 
               <a
-                href="/assets/Resume.pdf"
+                href="/assets/Resume-1.pdf"
                 download="Resume.pdf"
                 className={`px-8 py-4 rounded-lg transition-all border-2 flex items-center justify-center gap-2 font-semibold ${
                   darkMode
